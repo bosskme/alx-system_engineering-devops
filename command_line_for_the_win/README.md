@@ -5,6 +5,6 @@ For this project, I completed the [Commandline Challenge](https://cmdchallenge.c
 Each file is a PNG screenshot signifying my completion of all levels.~
 
 **First Challenge is to print “hello world” on the terminal in a single command**
-	***echo "hello world"***
+	_echo "hello world"_
 **Print the current working directory**
-	***pwd***
+	_pwd_
