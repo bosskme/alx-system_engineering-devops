@@ -2,7 +2,7 @@
 # This script will Display "Hi" if "Best School" is diplayed 9 times
 
 counter=1
-while [ $counter -lt 10 ]
+while [ $counter -le 10 ]
 do
 if [ $counter -eq 9 ]
 then
