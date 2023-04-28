@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# The script displays the time "12:00", which is the end of the 12-hour period
+
+hours=0
+minutes=1
+
+while [ $hours -lt 12 ];
+do
+    while [ $minutes -lt 60 ];
+    do
+
+	echo "$hours:$minutes"
+	minutes=$((minutes+1))
+
+    done
+    hours=$((hours+1))
+    minutes=1
+done
+
+echo "12:00"
