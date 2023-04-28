@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# The Script displays:
+# The content of the current director
+# In a list format
+# Where only the part of the name after the first dash is displayed
+
+cd "$(dirname "$0")"
+
+for file in *; do
+    if [[ $file == .* ]]; then
+	continue
+    fi
+    if [[ $file == *-* ]]; then
+	display_name=${file#*-}
+	echo "- $display_name"
+    else
+	echo "- $file"
+    fi
+done
+
