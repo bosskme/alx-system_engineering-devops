@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# This script displays numbers from 1-20 and prins the corresponding messages for specific iteration using while loop and case statement
+
+counter=1
+while [ $counter -le 20 ]
+do case $counter in
+4)
+echo "4 and then bad luck from China"
+;;
+9)
+echo "9 and then bad luck from Japan"
+;;
+17)
+echo "17 and then bad luck from Italy"
+;;
+*)
+echo $counter
+;;
+esac
+counter=$((counter+1))
+done
