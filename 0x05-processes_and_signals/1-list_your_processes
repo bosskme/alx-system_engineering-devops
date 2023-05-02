@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# This scripts Displys Running Processes
+
+echo "List of currently running processes:"
+
+ps auxf
