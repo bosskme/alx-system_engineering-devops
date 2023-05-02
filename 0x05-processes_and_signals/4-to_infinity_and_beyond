@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # This scripts Displays the message "To infinity and beyond"
-
+# with a sleep 2 in betwen each iteration
 while true
 do
-echo "To infinity and beyond"
-echo 2
+    echo "To infinity and beyond"
+    echo 2
 done
