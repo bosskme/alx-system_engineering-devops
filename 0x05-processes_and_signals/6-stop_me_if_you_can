@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# This script stops a processed file
+# find the process ID
+# check if the process is running
+# use the /proc filesystem to send SIGTERM signal
+# by writing the signal number to the process's
+
+pid=$(pgrep 4-to_infinity_and_beyond)
+
+if [[ -z $pid ]]
+then
+echo "The file process is not running"
+else
+echo "Stopping the file processes"
+echo -n "15" > "/proc/$pid/status"
+echo "Process terminated."
+fi
