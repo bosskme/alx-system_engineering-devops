@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This script displays line containing the "Bash" word
+
+# schellcheck disable=SC2009
+ps -aux | pgrep bash
