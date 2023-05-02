@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# This Script kills 7-highlander
+# Find the process ID (PID)
+# Check if the process is running
+# Terminate the process
+
+pid=$(pgrep 7-highlander)
+
+if [[ -z $pid ]]
+then
+echo "The 7-highlander process is not currently running."
+else
+echo "Stopping the 7-highlander process (PID $pid)..."
+kill "$pid"
+echo "Process termindate."
+fi
