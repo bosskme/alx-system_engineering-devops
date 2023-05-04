@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Set up hosts file
+# Install Docker if not already installed
+# Run the checker on Docker
+
+echo "127.0.0.2 localhost" >> /etc/hosts
+echo "8.8.8.8 facebook.com" >> /etc/hosts
+
+if ! [ -x "$(command -v docker)" ]; then
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+rm get-docker.sh
+fi
+
+docker run checker-image
